@@ -1,0 +1,14 @@
+.background {
+    background: #F9FDFF;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 1px 6px 20px rgba(5, 75, 120, 0.15);
+    border-radius: 15px;
+}
+
+.container {
+    display: grid;
+    padding: 0 15% 0 15%;
+}
