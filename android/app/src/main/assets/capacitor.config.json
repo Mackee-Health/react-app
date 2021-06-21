@@ -1,0 +1,6 @@
+{
+	"appId": "com.mackeehealth.app",
+	"appName": "Mackee Health",
+	"webDir": "out",
+	"bundledWebRuntime": false
+}
