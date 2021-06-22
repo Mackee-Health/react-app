@@ -1,14 +1,51 @@
 .background {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
     background: #F9FDFF;
+    width: 100vw;
+    height: 100vh;
 }
 
 .card {
     background: #FFFFFF;
     box-shadow: 1px 6px 20px rgba(5, 75, 120, 0.15);
     border-radius: 15px;
+    padding: 0 25px 25px 25px;
+}
+
+.card p {
+    color: #004977;
+    font-family: Montserrat, Arial, Helvetica;
+    font-size: 1.5rem;
 }
 
 .container {
     display: grid;
-    padding: 0 15% 0 15%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 0 15%;
+}
+
+.illustationContainer {
+    width: 75%
+}
+
+/* Phones */
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 25px;
+        padding: 25px;
+    }
+    .card {
+        padding: 0 10px 10px 10px;
+    }
+    .card p {
+        font-size: 1rem;
+    }
 }
