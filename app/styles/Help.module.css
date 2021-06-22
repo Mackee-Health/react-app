@@ -30,7 +30,9 @@
 }
 
 .illustationContainer {
-    width: 75%
+    width: 75%;
+    position: relative;
+    padding-bottom: 50%;
 }
 
 /* Phones */
