@@ -1,0 +1,28 @@
+.headerContainer {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.headerContainer p {
+    font-size: 25px;
+    color: #004977;
+}
+
+.logoContainer {
+    width: 100px;
+}
+
+/* Phones */
+
+@media (max-width: 480px) {
+    .headerContainer {
+        padding: 25px;
+    }
+
+    .logoContainer {
+        width: 50px;
+    }
+}
