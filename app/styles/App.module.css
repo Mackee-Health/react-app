@@ -15,6 +15,33 @@
     width: 100px;
 }
 
+.profileContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background: linear-gradient(180deg, #0099FA 0%, #0583D3 100%);
+    border-radius: 60px;
+    margin-bottom: 50px;
+}
+
+.profileContainer p {
+    font-size: 25px;
+    color: white;
+    margin: 0;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.profilePictureContainer {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
 /* Phones */
 
 @media (max-width: 480px) {
@@ -24,5 +51,9 @@
 
     .logoContainer {
         width: 50px;
+    }
+
+    .profileContainer {
+        margin-bottom: 15px;
     }
 }
