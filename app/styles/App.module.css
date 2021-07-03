@@ -42,17 +42,61 @@
     overflow: hidden;
 }
 
+.mobileBottomNav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    will-change: transform;
+    transform: translateZ(0);
+    display: flex;
+    align-items: flex-end;
+    height: 80px;
+    box-shadow: 1px 6px 20px rgba(5, 75, 120, 0.15);
+    background-color: #fff;
+}
+
+.mobileBottomNavItem {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mobileBottomNavItemContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobileBottomNavImage {
+    position: relative;
+    width: 25px;
+    height: 25px;
+}
+
+.mobileBottomNavProfile {
+    position: relative;
+    border-radius: 12.5px;
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+}
+
 /* Phones */
 
 @media (max-width: 480px) {
     .headerContainer {
         padding: 25px;
     }
-
+    
     .logoContainer {
         width: 50px;
     }
-
+    
     .profileContainer {
         margin-bottom: 15px;
     }

@@ -7,7 +7,7 @@ export default function ProfileCard(props) {
         <div className={styles.profileContainer}>
             <p>{props.name}</p>
             <div className={styles.profilePictureContainer}>
-                <Image src={profilePicture} layout="fill" objectFit="cover" alt="Picture of the author" />
+                <Image src={profilePicture} layout="fill" objectFit="cover" alt="Profile pciture" />
             </div>
         </div>
     )
