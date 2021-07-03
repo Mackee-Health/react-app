@@ -4,16 +4,6 @@
     width: 100vw;
 }
 
-.container {
-    min-height: 100vh;
-    padding: 0 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 .main {
     padding: 0 20% 0 20%;
     display: flex;
@@ -93,53 +83,12 @@
 }
 
 .informationsTable td {
-    /* border: 1px solid black; */
     width: 50%;
     padding: 15px;
 }
 
 .informationsTable .detail {
     text-align: end;
-}
-
-.buttonContainer {
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
-
-button.consult, button.validate, button.destination{
-    padding: 5px 15px 5px 15px;
-    font-size: small;
-}
-
-button.consult {
-    background: #FFFFFF;
-    border: 0.2px solid rgba(0, 153, 250, 0.31);
-    box-sizing: border-box;
-    box-shadow: 1px 2px 7px rgba(5, 131, 211, 0.16);
-    border-radius: 11.5px;
-    color: #004977;
-}
-
-button.validate {
-    background: linear-gradient(180deg, #90D35F 0%, #6FB33E 100%);
-    border-radius: 15px;
-    border: none;
-    color: white;
-}
-
-button.more {
-    background: linear-gradient(180deg, #0099FA 0%, #0583D3 100%);
-    border-radius: 15px;
-    border: none;
-    font-weight: 600;
-    font-size: large;
-    color: white;
-    width: 100%;
-    margin-top: 20px;
-    padding: 10px 0 10px 0;
 }
 
 button.destination {
@@ -149,46 +98,12 @@ button.destination {
     border: none;
     color: white;
     max-height: 30px;
+    padding: 5px 15px 5px 15px;
+    font-size: small;
 }
 
 .call {
     color: #0099FA;
-}
-
-.footer {
-    width: 100%;
-    height: 100px;
-    border-top: 1px solid #eaeaea;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-}
-
-.title a {
-    color: #0070f3;
-    text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-    text-decoration: underline;
-}
-
-.code {
-    background: #fafafa;
-    border-radius: 5px;
-    padding: 0.75rem;
-    font-size: 1.1rem;
-    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
 .card {
@@ -199,18 +114,6 @@ button.destination {
     width: 100%;
     background: #FFFFFF;
     box-shadow: 1px 6px 20px rgba(5, 75, 120, 0.15);
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-    color: #0070f3;
-    border-color: #0070f3;
-}
-
-.logo {
-    height: 1em;
-    margin-left: 0.5rem;
 }
 
 /* Phones */
