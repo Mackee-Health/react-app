@@ -38,13 +38,12 @@ export default function Home() {
           </a>
           </Link>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+          <Link href="profile" >
+            <a href="https://github.com/vercel/next.js/tree/master/examples" className={styles.card}>
+              <h2>Examples &rarr;</h2>
+              <p>Discover and deploy boilerplate example Next.js projects.</p>
+            </a>
+          </Link>
 
           <a
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
