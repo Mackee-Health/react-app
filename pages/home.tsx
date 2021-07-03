@@ -13,7 +13,7 @@ export default function Home() {
             <Header name={"Mon espace MonOrdo"} />
             <main className={styles.main}>
                 <ProfileCard name={"Ornella"} />
-                <div className={styles.prescriptions}>
+                <section className={styles.prescriptions}>
                     <p className={styles.headerText}>Mes dernières ordonnances</p>
                     <div className={styles.card}>
                         <p className={styles.title}>Docteur Jean Dupont</p>
@@ -24,9 +24,9 @@ export default function Home() {
                         </section>
                     </div>
                     <button className={styles.more}>Voir toutes mes ordonnances</button>
-                </div>
+                </section>
 
-                <div className={styles.pharmacies}>
+                <section className={styles.pharmacies}>
                     <p className={styles.headerText}>Mes dernières ordonnances</p>
                     <div className={styles.card}>
                         <div className={styles.header}>
@@ -44,7 +44,36 @@ export default function Home() {
                             <button className={styles.destination}>Itinéraire</button>
                         </div>
                     </div>
-                </div>
+                </section>
+
+                <section className={styles.prescriptionsList}>
+                    <hr />
+                    <p className={styles.headerText}>Mes dernières ordonnances</p>
+                    <div className={styles.card}>
+                        <table className={styles.prescriptionsTable}>
+                            <tr>
+                                <td>Ordonnance de <b>Docteur X</b>.</td>
+                                <td className={styles.date}>10/03/2021</td>
+                            </tr>
+                            <tr>
+                                <td>Ordonnance de <b>Docteur X</b>.</td>
+                                <td className={styles.date}>09/02/2021</td>
+                            </tr>
+                            <tr>
+                                <td>Ordonnance de <b>Docteur X</b>.</td>
+                                <td className={styles.date}>12/01/2021</td>
+                            </tr>
+                            <tr>
+                                <td>Ordonnance de <b>Docteur X</b>.</td>
+                                <td className={styles.date}>09/09/2020</td>
+                            </tr>
+                            <tr>
+                                <td>Ordonnance de <b>Docteur X</b>.</td>
+                                <td className={styles.date}>23/06/2020</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
             </main>
         </div>
     )

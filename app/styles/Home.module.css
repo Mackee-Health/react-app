@@ -79,6 +79,51 @@
   justify-content: space-between;
 }
 
+.prescriptionsList {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.prescriptionsList hr {
+  margin-top: 25px;
+  border: 0.5px solid rgba(5, 131, 211, 0.2);
+}
+
+.prescriptionsList .headerText {
+  color: #004977;
+  font-weight: 500;
+  font-size: larger;
+}
+
+.prescriptionsTable {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 15px;
+  padding: 15px;
+}
+
+.prescriptionsTable tr {
+  width: 100%;
+  border-bottom: 0.5px solid rgba(5, 131, 211, 0.2);
+  padding: 15px;
+  color: #004977;
+  ;
+}
+
+.prescriptionsTable tr:last-child {
+  border-bottom: none;
+}
+
+.prescriptionsTable td {
+  /* border: 1px solid black; */
+  width: 50%;
+  padding: 15px;
+}
+
+.prescriptionsTable .date {
+  text-align: end;
+}
+
 .buttonContainer {
   margin-top: 20px;
   display: flex;
