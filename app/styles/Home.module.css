@@ -1,3 +1,9 @@
+.page {
+  background-color: #F9FDFF;
+  height: 100vh;
+  width: 100vw;
+}
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -9,12 +15,166 @@
 }
 
 .main {
-  padding: 5rem 0;
-  flex: 1;
+  padding: 0 20% 0 20%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.prescriptions {
+  width: 45%;
+}
+
+.prescriptions .headerText {
+  color: #004977;
+  font-weight: 500;
+  font-size: larger;
+}
+
+.prescriptions .title {
+  color: #004977;
+  font-weight: 600;
+  font-size: large;
+}
+
+.prescriptions .description {
+  color: #004977;
+  font-weight: normal;
+  font-size: medium;
+}
+
+.pharmacies {
+  width: 45%;  
+}
+
+.pharmacies .headerText {
+  color: #004977;
+  font-weight: 500;
+  font-size: larger;
+}
+
+.pharmacies .title {
+  margin-bottom: 5px;
+  color: #004977;
+  font-weight: 600;
+  font-size: large;
+}
+
+.pharmacies .distance {
+  margin-top: 0;
+  color: #004977;
+  font-weight: 400;
+  font-size: small;
+}
+
+.pharmacies .description {
+  color: #004977;
+  font-weight: 300;
+  font-size: medium;
+}
+
+.pharmacies .header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.prescriptionsList {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.prescriptionsList hr {
+  margin-top: 25px;
+  border: 0.5px solid rgba(5, 131, 211, 0.2);
+}
+
+.prescriptionsList .headerText {
+  color: #004977;
+  font-weight: 500;
+  font-size: larger;
+}
+
+.prescriptionsTable {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 15px;
+  padding: 15px;
+}
+
+.prescriptionsTable tr {
+  width: 100%;
+  border-bottom: 0.5px solid rgba(5, 131, 211, 0.2);
+  padding: 15px;
+  color: #004977;
+  ;
+}
+
+.prescriptionsTable tr:last-child {
+  border-bottom: none;
+}
+
+.prescriptionsTable td {
+  /* border: 1px solid black; */
+  width: 50%;
+  padding: 15px;
+}
+
+.prescriptionsTable .date {
+  text-align: end;
+}
+
+.buttonContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+button.consult, button.validate, button.destination{
+  padding: 5px 15px 5px 15px;
+  font-size: small;
+}
+
+button.consult {
+  background: #FFFFFF;
+  border: 0.2px solid rgba(0, 153, 250, 0.31);
+  box-sizing: border-box;
+  box-shadow: 1px 2px 7px rgba(5, 131, 211, 0.16);
+  border-radius: 11.5px;
+  color: #004977;
+}
+
+button.validate {
+  background: linear-gradient(180deg, #90D35F 0%, #6FB33E 100%);
+  border-radius: 15px;
+  border: none;
+  color: white;
+}
+
+button.more {
+  background: linear-gradient(180deg, #0099FA 0%, #0583D3 100%);
+  border-radius: 15px;
+  border: none;
+  font-weight: 600;
+  font-size: large;
+  color: white;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 0 10px 0;
+}
+
+button.destination {
+  margin-top: 10px;
+  background: linear-gradient(180deg, #0099FA 0%, #028AE0 100%);
+  border-radius: 15px;
+  border: none;
+  color: white;
+  max-height: 30px;
+}
+
+.call {
+  color: #0099FA;
 }
 
 .footer {
@@ -44,50 +204,23 @@
   text-decoration: underline;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
 .code {
   background: #fafafa;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
+  Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
 .card {
-  margin: 1rem;
   padding: 1.5rem;
-  text-align: left;
-  color: inherit;
   text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
+  border-radius: 25px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  width: 45%;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 1px 6px 20px rgba(5, 75, 120, 0.15);
 }
 
 .card:hover,
@@ -97,25 +230,19 @@
   border-color: #0070f3;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
 .logo {
   height: 1em;
   margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
-  .grid {
+/* Phones */
+
+@media (max-width: 480px) {
+  .main {
+    padding: 0 25px 0 25px;
+  }
+  
+  .prescriptions, .pharmacies {
     width: 100%;
-    flex-direction: column;
   }
 }
