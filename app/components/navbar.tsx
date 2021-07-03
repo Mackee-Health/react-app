@@ -9,7 +9,7 @@ import Link from 'next/link'
 export default function Navbar() {
   return (
     <nav className={styles.mobileBottomNav}>
-      <Link href="home" passHref>
+      <Link href="/" passHref>
         <div className={styles.mobileBottomNavItem}>
           <div className={styles.mobileBottomNavItemContent}>
             <div className={styles.mobileBottomNavImage}>
