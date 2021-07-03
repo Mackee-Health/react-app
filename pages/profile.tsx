@@ -5,6 +5,7 @@ import styles from '../app/styles/Profile.module.css'
 import ProfileCard from '../app/components/profileCard';
 import heart from '../public/heart.svg'
 import phone from '../public/phone.svg'
+import Navbar from '../app/components/navbar';
 
 export default function Home() {
     return (
@@ -75,6 +76,7 @@ export default function Home() {
                     </div>
                 </section>
             </main>
+            <Navbar></Navbar>
         </div>
     )
 }

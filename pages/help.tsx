@@ -7,6 +7,7 @@ import questions from '../public/questions.svg'
 import security from '../public/security.svg'
 import warning from '../public/warning.svg'
 import faq from '../public/faq.svg'
+import Navbar from '../app/components/navbar'
 
 const cardsTitle = {
     outOfDate: "Mon ordonnance est périmée, que faire ?",
@@ -29,6 +30,7 @@ export default function Help() {
                 <Card name={cardsTitle.reportProblem} image={warning} />
                 <Card name={cardsTitle.faq} image={faq} />
             </div>
+            <Navbar></Navbar>
         </div>
     )
 }
