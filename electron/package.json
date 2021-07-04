@@ -1,5 +1,5 @@
 {
-  "name": "Mackee Health",
+  "name": "MackeeHealth",
   "version": "1.0.0",
   "description": "An Amazing Capacitor App",
   "main": "./build/src/index.js",
@@ -29,8 +29,8 @@
   "author": "",
   "license": "MIT",
   "build": {
-    "appId": "com.example.capacitor-app",
-    "productName": "Capacitor App",
+    "appId": "com.example.mackee-health",
+    "productName": "Mackee Health",
     "files": [
       "assets/**",
       "build/**",
@@ -42,7 +42,7 @@
     "mac": {
       "category": "public.app-category.developer-tools",
       "target": "dmg",
-      "icon": "assets/appIcon.png"
+      "icon": "assets/Logo.png"
     },
     "win": {
       "target": "nsis",
