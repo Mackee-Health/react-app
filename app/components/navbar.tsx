@@ -19,7 +19,7 @@ export default function Navbar() {
           </div>
         </div>
       </Link>
-      <Link href="prescriptions" passHref>
+      <Link href="/prescriptions" passHref>
         <div className={styles.mobileBottomNavItem}>
           <div className={styles.mobileBottomNavItemContent}>
             <div className={styles.mobileBottomNavImage}>
@@ -29,7 +29,7 @@ export default function Navbar() {
           </div>
         </div>
       </Link>
-      <Link href="help" passHref>
+      <Link href="/help" passHref>
         <div className={styles.mobileBottomNavItem}>
           <div className={styles.mobileBottomNavItemContent}>
             <div className={styles.mobileBottomNavImage}>
@@ -39,7 +39,7 @@ export default function Navbar() {
           </div>
         </div>
       </Link>
-      <Link href="profile" passHref>
+      <Link href="/profile" passHref>
       <div className={styles.mobileBottomNavItem}>
         <div className={styles.mobileBottomNavItemContent}>
           <div className={styles.mobileBottomNavProfile}>
