@@ -31,12 +31,20 @@ export default function Prescriptions() {
                                 <tr>
                                     <td><b>Docteur X</b></td>
                                     <td className={styles.date}>10/03/2021</td>
-                                    <td><button className={styles.validate}>UTILISER</button></td>
+                                    <td>
+                                        <Link href="/prescription" passHref>
+                                            <button className={styles.validate}>UTILISER</button>
+                                        </Link>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><b>Docteur X</b></td>
                                     <td className={styles.date}>09/02/2021</td>
-                                    <td><button className={styles.validate}>UTILISER</button></td>
+                                    <td>
+                                        <Link href="/prescription" passHref>
+                                            <button className={styles.validate}>UTILISER</button>
+                                        </Link>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><b>Docteur X</b></td>
