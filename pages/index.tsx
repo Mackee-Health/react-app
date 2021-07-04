@@ -19,11 +19,17 @@ export default function Home() {
                         <p className={styles.title}>Docteur Jean Dupont</p>
                         <p className={styles.description}>Visite du 03/11/2021</p>
                         <section className={styles.buttonContainer}>
-                            <button className={styles.consult}>Consulter l&apos;ordonnance</button>
-                            <button className={styles.validate}>UTILISER</button>
+                            <Link href="/prescription" passHref>
+                                <button className={styles.consult}>Consulter l&apos;ordonnance</button>
+                            </Link>
+                            <Link href="/prescription" passHref>
+                                <button className={styles.validate}>UTILISER</button>
+                            </Link>
                         </section>
                     </div>
-                    <button className={styles.more}>Voir toutes mes ordonnances</button>
+                    <Link href="/prescriptions" passHref>
+                        <button className={styles.more}>Voir toutes mes ordonnances</button>
+                    </Link>
                 </section>
 
                 <section className={styles.pharmacies}>
@@ -39,7 +45,9 @@ export default function Home() {
                         <div className={styles.header}>
                             <div>
                                 <p className={styles.description}>Ouverte de 9h à 19h</p>
-                                <p className={styles.call}><Image src={phone} alt="Phone"></Image> Appeler</p>
+                                <Link href="tel:06 11 22 33 44" passHref>
+                                    <p className={styles.call}><Image src={phone} alt="Phone"></Image> Appeler</p>
+                                </Link>
                             </div>
                             <button className={styles.destination}>Itinéraire</button>
                         </div>

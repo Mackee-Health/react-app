@@ -27,7 +27,9 @@ export default function Home() {
                             </tr>
                             <tr>
                                 <td>N° de téléphone</td>
-                                <td className={styles.detail}>06 00 11 22 33</td>
+                                <Link href="tel:06 00 11 22 33" passHref>
+                                    <td className={styles.detail}>06 00 11 22 33</td>
+                                </Link>
                             </tr>
                             <tr>
                                 <td>Email</td>
@@ -49,9 +51,13 @@ export default function Home() {
                         <div className={styles.header}>
                             <div>
                                 <p className={styles.description}>Ouvert de 9h à 19h</p>
-                                <p className={styles.call}><Image src={phone} alt="Phone"></Image> Appeler</p>
+                                <Link href="tel:06 11 22 33 44" passHref>
+                                    <p className={styles.call}><Image src={phone} alt="Phone"></Image> Appeler</p>
+                                </Link>
                             </div>
-                            <button className={styles.destination}>Prendre RDV</button>
+                            <Link href="tel:06 11 22 33 44" passHref>
+                                <button className={styles.destination}>Prendre RDV</button>
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -69,7 +75,9 @@ export default function Home() {
                         <div className={styles.header}>
                             <div>
                                 <p className={styles.description}>Ouverte de 9h à 19h</p>
-                                <p className={styles.call}><Image src={phone} alt="Phone"></Image> Appeler</p>
+                                <Link href="tel:06 11 22 33 44" passHref>
+                                    <p className={styles.call}><Image src={phone} alt="Phone"></Image> Appeler</p>
+                                </Link>
                             </div>
                             <button className={styles.destination}>Itinéraire</button>
                         </div>
